@@ -1,0 +1,37 @@
+# ztarcompress configuration file
+
+# Version: Configuration file version for compatibility (default: 1)
+# DO NOT EDIT THIS VALUE
+config_version = 1
+
+# Sources: List of directories to back up (default: ~/Documents, ~/.config)
+sources = ["~/Documents", "~/.config",]
+
+# Exclusions: List of directories or files to exclude from the backup
+# (default: node_modules, .venv, __pycache__, .ruff_cache)
+exclude = ["**/node_modules", "**/.venv", "**/__pycache__", "**/.ruff_cache"]
+
+# Directories for ztarcompress
+# Backup directory: Where to store the backups (default: ~/Backups)
+# Configuration directory: Path to the configuration directory (default: ~/.config/ztarcompress/)
+# Log directory: Where to store log files (default: ~/.local/state/ztarcompress/logs)
+# Cache directory: Where to store cache files (default: ~/.cache/ztarcompress)
+backup_directory = "~/.local/share/ztarcompress/backups"
+config_directory = "~/.config/ztarcompress/"
+log_directory = "~/.local/state/ztarcompress/logs"
+cache_directory = "~/.cache/ztarcompress"
+
+# Metadata settings
+# Metadata retention: How many metadata records to keep (default: 10)
+metadata_retention = 10
+
+# Retention settings
+# Archive retention: How many archive files to keep (default: 2)
+# Encrypted archive retention: How many encrypted archive files to keep (default: 1)
+# Decrypted archive retention: How many decrypted archive files to keep (default: 1)
+# Extracted archive retention: How many extracted archive files to keep (default: 1)
+archive_retention = 2
+encrypted_archive_retention = 1
+decrypted_archive_retention = 1
+extracted_archive_retention = 1
+
